@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenged Sevenfold</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">Avenged Sevnfold Blog</h2>
+                <p class="sub-heading">Single & Album</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="single">Avenged Sefenfold</h4>
+                <p class="item">Photocard</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="single">Heil To The King</h4>
+                <p class="item">Compact Disc</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox" name="" id="">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>Avenged Sevnfold Blog</h1>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Personnel</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <div class="icon">🎶</div>
+                    <h3>Music</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, exercitationem.</p>
+            </div>
+            <div class="service">
+                <div class="icon">💽</div>
+                    <h3>Compact Disc</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, exercitationem.</p>
+            </div>
+            <div class="service">
+                <div class="icon">👕</div>
+                    <h3>Merchandise</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, exercitationem.</p>
+            </div>
+            <div class="service">
+                <div class="icon">🖼️</div>
+                    <h3>Photocard</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, exercitationem.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="img/thumbs/shadows.png" alt="">
+            <img src="img/thumbs/synysters.png" alt="">
+            <img src="img/thumbs/zackys.png" alt="">
+            <img src="img/thumbs/johnys.png" alt="">
+            <img src="img/thumbs/brocks.png" alt="">
+        </section>
+
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector(`.menu-toggle input`);
+        const nav = document.querySelector(`nav ul`);
+
+        menuToggle.addEventListener(`click`, function(){
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+</html>
